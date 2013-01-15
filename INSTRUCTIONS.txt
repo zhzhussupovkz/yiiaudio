@@ -1,0 +1,21 @@
+yiiaudio
+===========
+
+yiiaudio - extension for yii framework, HTML5 audio player. Based on http://kolber.github.com/audiojs
+
+INSTALL
+
+1.Download extension from https://github.com/zhzhussupovkz/yiiaudio.git to protected/extensions.
+
+USAGE
+
+1.Create some HTML5 audio tags in your page:
+
+<p><audio class="player" src="<?php echo Yii::app()->request->baseUrl.'/mp3/audio_1.mp3'?>">
+	Your browser does not support the <code>audio</code> element.</audio><br/>Алкисса - Н.Тлендиев</p>
+
+2.Run widget:
+
+<?php
+	$this->widget('ext.yiiaudio.yiiAudio', array());
+?>
